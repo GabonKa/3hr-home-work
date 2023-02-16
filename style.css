@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+}
+h2, p{
+    padding-left: 5px;
+}
+
+img{
+    max-width: 500px;
+}
+.b{
+    max-width: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+.one{
+    float: left;
+}
+.two{
+    margin-left: 200px;
+    float: left;
+}
+.three{
+    float: right;
+}
+.b::before{
+ content: '';
+ position: absolute;
+}
+.one::before{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(256,0,0,0.5);
+    border-radius: 50%;
+    top: 50%; right: 0;
+}
+.two::before{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0,0,256,0.5);
+    border-radius: 50%;
+    bottom: 0;
+}
+.three::before{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0,256,0,0.5);
+    border-radius: 50%;
+    bottom: 0; right: 0;
+}
